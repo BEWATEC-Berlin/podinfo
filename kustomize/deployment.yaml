@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: ghcr.io/amandoad1989/podinfo:build.3 # {"$imagepolicy": "flux-system:podinfo"}
+        image: ghcr.io/amandoad1989/podinfo:build.4 # {"$imagepolicy": "flux-system:podinfo"}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
