@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cc-epg-service
+  name: podinfo
 spec:
   replicas: 2
   template:
     spec:
       containers:
-        - name: cc-epg-service
+        - name: podinfod
           resources:
             limits:
               cpu: 512m
