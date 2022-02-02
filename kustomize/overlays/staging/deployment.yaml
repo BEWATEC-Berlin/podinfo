@@ -8,6 +8,9 @@ spec:
     spec:
       containers:
         - name: podinfod
+          ports:
+          - name: http
+            containerPort: 10000
           resources:
             limits:
               cpu: 512m
