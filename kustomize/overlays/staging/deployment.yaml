@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cc-epg-service
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: cc-epg-service
+          resources:
+            limits:
+              cpu: 512m
+              memory: 512Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
